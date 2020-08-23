@@ -14,7 +14,7 @@ This is a website that provides mainly the implementation of cutting edge AI tec
 
 # Upcoming blogs.
 1. Seq2seq - A detailed analysis.
-2. Limitations of coversation AI in 2020.
+2. Limitations of coversational AI in 2020.
 3. How to build a chabot using tensorflow in a day.
 
 # Verdict
