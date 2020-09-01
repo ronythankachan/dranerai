@@ -1,6 +1,5 @@
 import React from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+import {Navbar, Nav, Form, FormControl, Button} from 'react-bootstrap';
 import Link from 'react-router-dom/Link';
 
 import '../App.css';
@@ -16,6 +15,9 @@ function MainNavBar(){
             <Link className="nav-link" to="/blog">Blog</Link>
             <Link className="nav-link" to="/contact">Contact</Link>
           </Nav>
+          {/* <Form inline>
+            <FormControl type="text" placeholder="Search" className=" mr-sm-2" style={{borderRadius:'.7rem'}} />
+          </Form> */}
         </Navbar.Collapse>
       </Navbar>
     );
