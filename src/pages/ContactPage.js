@@ -18,6 +18,7 @@ class ContactPage extends React.Component{
         let templateParams = {
             firstName:firstName,
             lastName:lastName,
+            subject:'Email from draner.ai',
             email:email,
             message:message
         }
