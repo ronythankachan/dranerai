@@ -7,7 +7,7 @@ import AI from '../images/ai.png';
 
 function HomeProjectCards(props){
     return(
-      <CardColumns fluid={true}>
+      <CardColumns>
         <Card>
           <Card.Img variant="top" src={ChatbotIcon} />
           <Card.Body>

@@ -11,9 +11,9 @@ function HomeJumbotron(props){
         <Container>
             <Jumbotron className="jumbotron-color" fluid={true}>
                 <Typing speed={2}>
-                    <span class="typist-font">Building cool projects.. </span>
+                    <span className="typist-font">Building cool projects.. </span>
                     <Typing.Backspace count={16} />
-                    <span class="typist-font">shitty projects no one cares_</span>
+                    <span className="typist-font">shitty projects no one cares_</span>
 
                 </Typing>
                 <p>

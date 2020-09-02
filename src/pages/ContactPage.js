@@ -22,11 +22,12 @@ class ContactPage extends React.Component{
             email:email,
             message:message
         }
+        alert(templateParams.firstName+" "+templateParams.lastName+ " " +templateParams.subject);
         emailjs.send('gmail','contact_template', templateParams, 'user_T8n5Lzk3ONUWIAY6ye64F')
         .then((response) => {
-            console.log('SUCCESS!', response.status, response.text);
+            alert("Email sent");
         }, (err) => {
-            console.log('FAILED...', err);
+            alert("Email send failed");
         });
     }
 

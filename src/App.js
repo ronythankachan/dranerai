@@ -1,11 +1,9 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Switch from 'react-router-dom/Switch';
 import './App.css';
 
-
-import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import BlogPage from './pages/BlogPage';

@@ -6,7 +6,7 @@ import Spotify from '../images/spotify.png';
 
 function HomeBlogCards(props){
     return(
-      <CardColumns fluid={true}>
+      <CardColumns>
         <Card>
           <Card.Img variant="top" src={Spotify} />
           <Card.Body>

@@ -5,9 +5,8 @@ import { Container } from 'react-bootstrap';
 function Chatbot(props){
     return(
         <Container>
-            <img class ="bot-icon" src={ChatBotIcon} alt="Load error"/>
-
-            <img class ="bot-icon" src={ChatBotIcon} alt="Load error"/>
+            <img className ="bot-icon" src={ChatBotIcon} alt="Load error"/>
+            <img className ="bot-icon" src={ChatBotIcon} alt="Load error"/>
         </Container>
     );
 }
