@@ -1,19 +1,20 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
+import {Container} from 'react-bootstrap';
 import { Form, Row, Col, Button } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
 
 class ContactPage extends React.Component{
-    constructor(props){
-        super(props);
-        this.state={
+
+    state={
             firstName:'',
             lastName:'',
             email:'',
             message:''
-        }
     }
+
     handleSubmit(e){
+        e.preventDefault();
+        alert("test");
         const { firstName, lastName, email, message } = this.state;
         let templateParams = {
             firstName:firstName,
@@ -22,13 +23,17 @@ class ContactPage extends React.Component{
             email:email,
             message:message
         }
-        alert(templateParams.firstName+" "+templateParams.lastName+ " " +templateParams.subject);
+        
         emailjs.send('gmail','contact_template', templateParams, 'user_T8n5Lzk3ONUWIAY6ye64F')
-        .then((response) => {
-            alert("Email sent");
-        }, (err) => {
-            alert("Email send failed");
+        .then(response => {
+          console.log("Email send successfully");  
+        }).catch(err => {
+            console.log("Email sending failed");
         });
+        this.clearForm();
+    }
+    clearForm(){
+
     }
 
     handleChange = (param, e) => {
@@ -36,7 +41,7 @@ class ContactPage extends React.Component{
     }
 
     render(){
-        var details = {
+        const details = {
             "disclaimer":"*Your Information won't be disclosed under no circumstances.",
             "title":"Let's talk",
             "subtitle":"For any queries or to discuss something."
@@ -51,21 +56,25 @@ class ContactPage extends React.Component{
                     <Form id="contact-form" onSubmit={this.handleSubmit.bind(this)}>
                         <Row>
                             <Col>
-                                <Form.Label>First Name *</Form.Label>
-                                <Form.Control id="firstName" type="text" placeholder="First name" onChange={this.handleChange.bind(this,'firstName')} required />
-                            </Col>
+                                <Form.Group controlId="firstName" className="mt-3" onChange={this.handleChange.bind(this,'firstName')} required>
+                                    <Form.Label>First Name *</Form.Label>
+                                    <Form.Control type="text" placeholder="First Name" />
+                                </Form.Group>  
+                            </Col>  
                             <Col>
+                            <Form.Group controlId="lastName" className="mt-3" onChange={this.handleChange.bind(this,'lastName')} required>
                                 <Form.Label>Last Name *</Form.Label>
-                                <Form.Control id="lastName" type="text" placeholder="Last name" onChange={this.handleChange.bind(this,'lastName')} required />
+                                <Form.Control type="text" placeholder="Last Name" />
+                            </Form.Group>   
                             </Col>
                         </Row>
-                        <Form.Group className="mt-3" controlId="email" onChange={this.handleChange.bind(this,'email')} required>
+                        <Form.Group controlId="email" className="mt-3" onChange={this.handleChange.bind(this,'email')} required>
                             <Form.Label>Email *</Form.Label>
-                            <Form.Control id="email" type="email" placeholder="What's your email?" />
+                            <Form.Control type="email" placeholder="What's your email?" />
                         </Form.Group>   
-                        <Form.Group controlId="exampleForm.ControlTextarea1">
+                        <Form.Group>
                             <Form.Label>Message</Form.Label>
-                            <Form.Control id="message" as="textarea" rows="3" placeholder="What do you want to tell me.." onChange={this.handleChange.bind(this,'message')} required/>
+                            <Form.Control as="textarea" rows="3" placeholder="What do you want to tell me.." onChange={this.handleChange.bind(this,'message')} required/>
                         </Form.Group>
                         <Form.Text className="text-muted mb-3">
                             {details.disclaimer}

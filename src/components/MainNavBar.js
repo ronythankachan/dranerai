@@ -1,6 +1,6 @@
 import React from 'react';
 import {Navbar, Nav} from 'react-bootstrap';
-import Link from 'react-router-dom/Link';
+import {Link} from 'react-router-dom';
 
 import '../App.css';
 function MainNavBar(){
