@@ -14,7 +14,7 @@ class MainNavBar extends React.Component{
   }
   render(){
     return(
-      <Navbar className="nav-font" sticky="top" bg="white" variant="light" expand="lg" onClick={()=>{this.blah()}} expanded={this.state.navSelected}>
+      <Navbar className="nav-font" sticky="top" bg="white" variant="light" expand="lg" onClick={()=>{this.collpaseNav()}} expanded={this.state.navSelected}>
         <Navbar.Brand className="brand-font" href="/">draner.ai</Navbar.Brand>
         <Navbar.Toggle className="border-0" aria-controls ="navbar-toggle" />
         <Navbar.Collapse id="navbar-toggle">
