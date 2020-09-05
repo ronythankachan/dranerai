@@ -88,6 +88,9 @@
   background-color: #b1cfaa1a;
   border-radius: 1rem;
   padding-bottom: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
 }
 .form-heading{
   color: #439b52; 
@@ -150,8 +153,14 @@
 }
 .inline p{
   display: inline-block;
+  margin: 1rem;
 }
 
 .hide-status{
   display: none;
+}
+.card-title{
+  background-color: #35352a23;
+  padding: 1rem;
+  border-radius: 1rem;
 }

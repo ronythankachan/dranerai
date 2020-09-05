@@ -1,21 +1,27 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
-import CardColumns from 'react-bootstrap/CardColumns';
+import {Card,CardColumns,Button} from 'react-bootstrap';
+import { withRouter } from "react-router-dom";
+
 import ChatbotIcon from '../images/chatbot.jpg';
 import AI from '../images/ai.png';
+class HomeProjectCards extends React.Component{
 
+  redirect(projectName){
+    return this.props.history.push("projects/"+projectName);
+  }
 
-function HomeProjectCards(props){
+  render(){
     return(
       <CardColumns>
         <Card>
           <Card.Img variant="top" src={ChatbotIcon} />
           <Card.Body>
-            <Card.Title>Card title that wraps to a new line</Card.Title>
+            <Card.Title className="card-title">Simple seq2seq closed domain chatbot</Card.Title>
             <Card.Text>
               This is a longer card with supporting text below as a natural lead-in to
               additional content. This content is a little bit longer.
             </Card.Text>
+            <Button variant="info" onClick={this.redirect.bind(this,'closedseq2seq')}>Try now</Button>
           </Card.Body>
         </Card>
         <Card className="p-3">
@@ -97,5 +103,6 @@ function HomeProjectCards(props){
         </Card>
       </CardColumns>
     );
+  }
 }
-export default HomeProjectCards;
+export default withRouter(HomeProjectCards);

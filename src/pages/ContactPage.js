@@ -69,8 +69,9 @@ class ContactPage extends React.Component{
             "subtitle":"For any queries or to discuss something."
         }
         return(
-            <Container className="form-border mt-5">
-                    <div className="form-heading">
+            <Container>
+                <Container className="form-border">
+                <div className="form-heading">
                         <h1>{details.title}</h1>
                         <h6 className="section-subheading">{details.subtitle}</h6>
                         <hr/>
@@ -110,6 +111,7 @@ class ContactPage extends React.Component{
                             {this.state.messageStatus}
                         </Row>
                     </Form>
+                </Container>
             </Container>  
         );
     }

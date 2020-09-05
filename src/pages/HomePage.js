@@ -1,4 +1,6 @@
 import React from 'react';
+import { withRouter } from "react-router-dom";
+
 import HomeBlogCards from '../components/HomeBlogCards';
 import HomeProjectCards from '../components/HomeProjectCards';
 import Container from 'react-bootstrap/Container';
@@ -24,4 +26,4 @@ function HomePage(props){
         </Container>
     );
 }
-export default HomePage;
+export default withRouter(HomePage);
