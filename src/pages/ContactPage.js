@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container} from 'react-bootstrap';
 import { Form, Row, Col, Button } from 'react-bootstrap';
-import emailjs from 'emailjs-com';
+import axios from 'axios';
 
 import Tick from '../images/tick.png';
 
@@ -16,19 +16,26 @@ class ContactPage extends React.Component{
     }
 
     handleSubmit(e){
+
         e.preventDefault();
         const { firstName, lastName, email, message } = this.state;
-        let templateParams = {
+        let data = {
             firstName:firstName,
             lastName:lastName,
             subject:'Email from draner.ai',
             email:email,
             message:message
         }
-        emailjs.send('gmail','contact_template', templateParams, 'user_T8n5Lzk3ONUWIAY6ye64F')
+         axios({
+            method: 'post',
+            url: 'http://localhost:5000/api/send_mail',
+            data: data
+          })
         .then(response => {
+            console.log(response);
             this.setState({messageStatus:this.getStatusMessage('success')});
         }).catch(err => {
+            console.log(err);
             this.setState({messageStatus:this.getStatusMessage('failed')});
         }).finally(()=>{this.clearForm()});
     }
