@@ -21,8 +21,7 @@ function HomePage(props){
                 <HomeBlogCards/>
             </div>
             <hr/>
-            <HomeNewsLetter/>
-            
+            <HomeNewsLetter/>  
         </Container>
     );
 }

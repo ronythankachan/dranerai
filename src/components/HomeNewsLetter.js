@@ -1,12 +1,11 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
 
 function HomeNewsLetter(props){
     return(
-        <Container className="form-border">
+        <div className="form-border">
             <div className="form-heading">
                 <h1>Subscribe</h1>
                 <h6 className="section-subheading">Subscribe for newsletter and updates.</h6>
@@ -22,8 +21,7 @@ function HomeNewsLetter(props){
                 </Form.Group>
                 <Button variant="info" type="submit">Submit</Button>
             </Form>
-
-        </Container>
+        </div>
     );
 }
 export default HomeNewsLetter;
