@@ -87,14 +87,11 @@
   border: .04rem solid rgba(148, 133, 133, 0.493);
   background-color: #b1cfaa1a;
   border-radius: 1rem;
-  padding-bottom: 2rem;
-  margin-right: 2rem;
+  padding:20px;
   margin-top: 2rem;
-  margin-left: 2rem;
 }
 .form-heading{
   color: #439b52; 
-  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .footer-extended{

@@ -77,7 +77,7 @@ class ContactPage extends React.Component{
         }
         return(
             <Container>
-                <Container className="form-border">
+                <div className="form-border">
                 <div className="form-heading">
                         <h1>{details.title}</h1>
                         <h6 className="section-subheading">{details.subtitle}</h6>
@@ -118,7 +118,7 @@ class ContactPage extends React.Component{
                             {this.state.messageStatus}
                         </Row>
                     </Form>
-                </Container>
+                </div>
             </Container>  
         );
     }
