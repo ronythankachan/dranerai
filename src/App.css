@@ -152,6 +152,7 @@ footer .row{
 .main-footer{
   margin-top: 2rem;
   border-top:1px solid #00000044;
+  background-color: #f5f5f5;
 }
 .main-footer a:hover{
   text-decoration: none;

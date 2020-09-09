@@ -1,0 +1,24 @@
+.side-bar {
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid;
+    border-radius: 0;
+    border-color: rgba(64, 194, 133, 0.693);
+    background-color: rgb(255, 255, 255);
+    transition: 0.8s ease;
+    max-height: calc(100vh - 9rem);
+    overflow-y: auto;
+    width: fit-content;
+}
+
+.toggle-menu {
+    height: 50px;
+    width: 100px;
+    position: fixed;
+    outline: none;
+    z-index: 1;
+    background-color: rgba(6, 32, 20, 0.693);
+    border-color: rgba(7, 34, 21, 0.693);
+    border-left: 0;
+}
