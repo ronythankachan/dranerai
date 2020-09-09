@@ -42,27 +42,18 @@
 .jumbotron-color{
   background-color: #ffffff !important;
 }
-.footer-color{
-  background-color: #212529 !important;
-}
-.light-text{
-  color: #fff;
-  margin: 1rem;
-}
-
-.footer-pos {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
 .brand-font{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold;
   font-style: normal;
   text-decoration: none;
-  font-size: 2rem !important;
+  font-size: 2rem !important; 
+  color: #ffc107 !important;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #000000;
+  display: inline;
 }
-
 .nav-font{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold;
@@ -94,26 +85,7 @@
   color: #439b52; 
   margin-bottom: 1rem;
 }
-.footer-extended{
-  margin-top: 2rem;
-  width:100%;
-  height:20%;
-  position: absolute;
-  left:0;
-  background-color: #070707de;
-}
-.footer-links{
-  margin: 1rem;
-}
-.footer-links a{
-  margin-right: 2rem;
-  color: white;
-  font-size: 1.2rem;
-}
-.footer-links a:hover{
-  color:rgb(199, 159, 30);
-  text-decoration: none;
-}
+
 .brand-font a{
   color: rgb(199, 159, 30);
 }
@@ -160,4 +132,32 @@
   background-color: #35352a23;
   padding: 1rem;
   border-radius: 1rem;
+}
+li img{
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: .4rem;
+}
+li a{
+  color: black;
+  font-size: 1.2rem;
+}
+.column{
+  text-align: center;
+  margin-top: 2rem;
+}
+footer .row{
+  margin-top: 3rem;
+}
+.main-footer{
+  margin-top: 2rem;
+  border-top:1px solid #00000044;
+}
+.main-footer a:hover{
+  text-decoration: none;
+  color: #ffc107;
+}
+.profile-picture{
+  border-radius: 50%;
+  height: 10rem;
 }

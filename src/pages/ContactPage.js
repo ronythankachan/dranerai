@@ -4,6 +4,7 @@ import { Form, Row, Col, Button } from 'react-bootstrap';
 import axios from 'axios';
 
 import Tick from '../images/tick.png';
+import Rony from '../images/rony.jpeg';
 
 class ContactPage extends React.Component{
 
@@ -118,6 +119,25 @@ class ContactPage extends React.Component{
                             {this.state.messageStatus}
                         </Row>
                     </Form>
+                </div><hr/>
+                <div>
+                    <h4 className="mt-4">About Rony</h4><br/>
+                    <Row>
+                        <Col className="col-lg-3">
+                            <img className="profile-picture" src={Rony} alt="Rony"/>
+                            <p className="mt-3">Name: Rony Thankachan</p>
+                            <p>Born: Novemeber 08</p>
+                            <p>Country:India</p>
+                            <p>Born: Novemeber 08</p>
+                        </Col>
+                        <Col>
+                            <section>Rony is a software engineer and programmer who specializes in artificial intelligence and machine learing. So far he has completed 400 projects in artificial intellegence and 630 blog posts. This is a platform creater by 
+                                rony to establish a set of data that can be primarly.Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. The term may also be applied to any machine that exhibits traits associated with a human mind such as learning and problem-solving.
+                                Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. The term may also be applied to any machine that exhibits traits associated with a human mind such as learning and problem-solving.
+                                Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. The term may also be applied to any machine that exhibits traits associated with a human mind such as learning and problem-solving.Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. The term may also be applied to any machine that exhibits traits associated with a human mind such as learning and problem-solving.
+                            </section>
+                        </Col>
+                    </Row>
                 </div>
             </Container>  
         );
