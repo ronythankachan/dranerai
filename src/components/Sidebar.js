@@ -4,16 +4,15 @@ import "../css/Sidebar.css";
 export const Sidebar = ({ data,changeProject }) => {
   return (
     <button className="sidebar scrollbar">
-      {data.map(item => {
+      {data.map((item,i) => {
         return (
-          <div onClick={()=>changeProject(item.project_id)}>
+          <div onClick={()=>changeProject(item.project_id)} key={i}>
             <ProjectCard
             project_id ={item.project_id}
             title={item.project_name}
             description={item.description}
             tags={item.tags}
             date={item.created_on}
-            key={item.project_id}
           />
           </div>
         );
@@ -37,8 +36,8 @@ const ProjectCard = ({ id,title, description, tags, date }) => {
 const Tag = ({ tags }) => {
   return (
     <>
-      {tags.map(item => (
-        <span className="tag">{item}</span>
+      {tags.map((item,i) => (
+        <span className="tag" key={i}>{item}</span>
       ))}
     </>
   );

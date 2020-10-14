@@ -98,7 +98,7 @@ function ProjectsPage() {
   }
   return (
     <div>
-      <Sidebar data={projectDetails} changeProject={changeProject}/>
+      <Sidebar data={projectDetails} changeProject={changeProject} key={projectId}/>
       <Project projectId={projectId} />
     </div>
   );
