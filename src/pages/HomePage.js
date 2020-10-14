@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from "react-router-dom";
+import {withRouter} from "react-router-dom";
 
 import HomeBlogCards from '../components/HomeBlogCards';
 import HomeProjectCards from '../components/HomeProjectCards';
@@ -7,11 +7,11 @@ import Container from 'react-bootstrap/Container';
 import HomeJumbotron from '../components/HomeJumbotron';
 import HomeNewsLetter from '../components/HomeNewsLetter';
 
-function HomePage(props){
-    return(
+function HomePage(props) {
+    return (
         <Container>
             <HomeJumbotron/>
-            <div> 
+            <div>
                 <h1 className="section-heading">Projects</h1>
                 <HomeProjectCards/>
             </div>
@@ -21,7 +21,7 @@ function HomePage(props){
                 <HomeBlogCards/>
             </div>
             <hr/>
-            <HomeNewsLetter/>  
+            <HomeNewsLetter/>
         </Container>
     );
 }

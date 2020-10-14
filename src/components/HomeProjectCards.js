@@ -7,15 +7,16 @@ const HomeProjectCards = () => {
   return (
     <CardColumns>
       <Card>
-        <Card.Img variant="top" src={ChatbotIcon} />
+        <Card.Img variant="top"
+          src={ChatbotIcon} />
         <Card.Body>
           <Card.Title className="card-title">
             Simple seq2seq closed domain chatbot
-          </Card.Title>
+                    </Card.Title>
           <Card.Text>
             This is a longer card with supporting text below as a natural
             lead-in to additional content. This content is a little bit longer.
-          </Card.Text>
+                    </Card.Text>
           <Button variant="info">Try now</Button>
         </Card.Body>
       </Card>
@@ -24,22 +25,23 @@ const HomeProjectCards = () => {
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
             posuere erat a ante.
-          </p>
+                    </p>
           <footer className="blockquote-footer">
             <small className="text-muted">
-              Someone famous in <cite title="Source Title">Source Title</cite>
+              Someone famous in
+                            <cite title="Source Title">Source Title</cite>
             </small>
           </footer>
         </blockquote>
       </Card>
       <Card>
-        <Card.Img variant="top" src={AI} />
+        <Card.Img variant="top"
+          src={AI} />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>
             This card has supporting text below as a natural lead-in to
-            additional content.{" "}
-          </Card.Text>
+                                                                                                                                                                                    additional content.{" "} </Card.Text>
         </Card.Body>
         <Card.Footer>
           <small className="text-muted">Last updated 3 mins ago</small>
@@ -50,10 +52,11 @@ const HomeProjectCards = () => {
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
             posuere erat a ante.
-          </p>
+                    </p>
           <footer className="blockquote-footer">
             <small className="text-muted">
-              Someone famous in <cite title="Source Title">Source Title</cite>
+              Someone famous in
+                            <cite title="Source Title">Source Title</cite>
             </small>
           </footer>
         </blockquote>
@@ -63,8 +66,7 @@ const HomeProjectCards = () => {
           <Card.Title>Card title</Card.Title>
           <Card.Text>
             This card has supporting text below as a natural lead-in to
-            additional content.{" "}
-          </Card.Text>
+                                                                                                                                                                                    additional content.{" "} </Card.Text>
           <Card.Text>
             <small className="text-muted">Last updated 3 mins ago</small>
           </Card.Text>
@@ -75,10 +77,11 @@ const HomeProjectCards = () => {
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
             posuere erat a ante.
-          </p>
+                    </p>
           <footer className="blockquote-footer">
             <small className="text-muted">
-              Someone famous in <cite title="Source Title">Source Title</cite>
+              Someone famous in
+                            <cite title="Source Title">Source Title</cite>
             </small>
           </footer>
         </blockquote>
@@ -90,7 +93,7 @@ const HomeProjectCards = () => {
             This is a wider card with supporting text below as a natural lead-in
             to additional content. This card has even longer content than the
             first to show that equal height action.
-          </Card.Text>
+                    </Card.Text>
           <Card.Text>
             <small className="text-muted">Last updated 3 mins ago</small>
           </Card.Text>
