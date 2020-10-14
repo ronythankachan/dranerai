@@ -1,39 +1,42 @@
 import React from "react";
 import "../css/Sidebar.css";
 
-export const Sidebar = ({ width, height, children }) => {
-  const [xPosition, setX] = React.useState(-width);
-
-  const toggleMenu = () => {
-    if (xPosition < 0) {
-      setX(0);
-    } else {
-      setX(-width);
-    }
-  };
-
-  React.useEffect(() => {
-    setX(0);
-  }, []);
+export const Sidebar = ({ data }) => {
   return (
-    <React.Fragment>
-      <div
-        className="side-bar"
-        style={{
-          transform: `translatex(${xPosition}px)`,
-          width: width,
-          minHeight: height
-        }}
-      >
-        <button
-          onClick={() => toggleMenu()}
-          className="toggle-menu"
-          style={{
-            transform: `translate(${width}px, 20vh)`
-          }}
-        ></button>
-        <div className="content">{children}</div>
+    <button className="sidebar scrollbar">
+      {data.map(item => {
+        return (
+          <ProjectCard
+            title={item.project_name}
+            description={item.description}
+            tags={item.tags}
+            date={item.created_on}
+            key={item.project_id}
+          />
+        );
+      })}
+    </button>
+  );
+};
+const ProjectCard = ({ title, description, tags, date }) => {
+  return (
+    <div className="sidebar-card">
+      <div className="card-title h6">{title}</div>
+      <div className="card-text">{description}</div>
+      <Tag tags={tags} />
+      <div className="card-footer mt-3">
+        <small className="text-muted">{date}</small>
       </div>
-    </React.Fragment>
+    </div>
+  );
+};
+
+const Tag = ({ tags }) => {
+  return (
+    <>
+      {tags.map(item => (
+        <span className="tag">{item}</span>
+      ))}
+    </>
   );
 };

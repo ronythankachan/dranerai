@@ -1,24 +1,48 @@
-.side-bar {
-    height: 100% !important;
-    display: flex;
-    flex-direction: column;
-    border-right: 1px solid;
-    border-radius: 0;
-    border-color: rgba(64, 194, 133, 0.693);
-    background-color: rgb(255, 255, 255);
-    transition: 0.8s ease;
-    max-height: calc(100vh - 9rem);
-    overflow-y: auto;
-    width: fit-content;
+.sidebar {
+  float: left;
+  height: 900px;
+  width: 220px;
+  overflow-y: auto;
+}
+button {
+  border: none;
 }
 
-.toggle-menu {
-    height: 50px;
-    width: 100px;
-    position: fixed;
-    outline: none;
-    z-index: 1;
-    background-color: rgba(6, 32, 20, 0.693);
-    border-color: rgba(7, 34, 21, 0.693);
-    border-left: 0;
+.sidebar-card {
+  width: 200px;
+  margin: 8px 2px;
+  padding: 10px;
+  box-shadow: 10px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  background: white;
+  border-radius: 5px;
+}
+.tag {
+  color: white;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 4px 8px;
+  font-size: 12px;
+  background-color: rgb(20, 139, 90);
+  display: inline-block;
+}
+.align-center {
+  margin-left: 2px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f5f5f5;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #0000003b;
 }

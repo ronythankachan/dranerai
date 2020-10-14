@@ -1,10 +1,10 @@
 .App {
   text-align: center;
 }
-*{
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -39,27 +39,28 @@
     transform: rotate(360deg);
   }
 }
-.jumbotron-color{
+.jumbotron-color {
   background-color: #ffffff !important;
 }
-.brand-font{
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.brand-font {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
   font-style: normal;
   text-decoration: none;
-  font-size: 2rem !important; 
-  color: #ffc107 !important;
+  font-size: 2rem !important;
+  color: #000000 !important;
   border-radius: 20px;
   padding: 10px;
-  background-color: #000000;
   display: inline;
 }
-.nav-font{
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.nav-font {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
-  box-shadow: 1px 2px 3px #cec3c3;  
+  box-shadow: 1px 2px 3px #cec3c3;
 }
-.section-heading{
+.section-heading {
   padding: 1.2rem;
   background-color: #b1cfaa36;
   color: #439b52;
@@ -67,38 +68,38 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-.section-subheading{
+.section-subheading {
   color: #212529;
 }
 
-.align-center{
+.align-center {
   text-align: center;
 }
-.form-border{
-  border: .04rem solid rgba(148, 133, 133, 0.493);
+.form-border {
+  border: 0.04rem solid rgba(148, 133, 133, 0.493);
   background-color: #b1cfaa1a;
   border-radius: 1rem;
-  padding:20px;
+  padding: 20px;
   margin-top: 2rem;
 }
-.form-heading{
-  color: #439b52; 
+.form-heading {
+  color: #439b52;
   margin-bottom: 1rem;
 }
 
-.brand-font a{
+.brand-font a {
   color: rgb(199, 159, 30);
 }
-.brand-font a:hover{
+.brand-font a:hover {
   color: #8c8d8f;
   text-decoration: none;
 }
-.info-icon-resize{
+.info-icon-resize {
   width: 1.5rem;
   margin-right: 0.5rem;
   margin-top: -0.2rem;
 }
-.bot-icon{
+.bot-icon {
   width: 4em;
   height: 4em;
   position: fixed;
@@ -106,59 +107,59 @@
   right: 2%;
   bottom: 2%;
 }
-.typist-font{
-  font-family: 'Courier New', Courier, monospace;
+.typist-font {
+  font-family: "Courier New", Courier, monospace;
   font-size: 2rem;
   color: #439b52;
   font-weight: bold;
 }
-.search-style{
+.search-style {
   margin-bottom: 1rem;
 }
-.inline img{
+.inline img {
   width: 1rem;
   height: 1rem;
   margin-right: 0.5rem;
 }
-.inline p{
+.inline p {
   display: inline-block;
   margin: 1rem;
 }
 
-.hide-status{
+.hide-status {
   display: none;
 }
-.card-title{
+.card-title {
   background-color: #35352a23;
   padding: 1rem;
   border-radius: 1rem;
 }
-li img{
+li img {
   width: 2.5rem;
   height: 2.5rem;
-  margin-bottom: .4rem;
+  margin-bottom: 0.4rem;
 }
-li a{
+li a {
   color: black;
   font-size: 1.2rem;
 }
-.column{
+.column {
   text-align: center;
   margin-top: 2rem;
 }
-footer .row{
+footer .row {
   margin-top: 3rem;
 }
-.main-footer{
+.main-footer {
   margin-top: 2rem;
-  border-top:1px solid #00000044;
+  border-top: 1px solid #00000044;
   background-color: #f5f5f5;
 }
-.main-footer a:hover{
+.main-footer a:hover {
   text-decoration: none;
   color: #ffc107;
 }
-.profile-picture{
+.profile-picture {
   border-radius: 50%;
   height: 10rem;
 }
