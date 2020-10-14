@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { Sidebar } from "../components/Sidebar";
 import ClosedSeq2seq from "../components/Projects/ClosedSeq2seq";
 import OpenChatBot from "../components/Projects/OpenChatBot";
+import ChatBotPersona from "../components/Projects/ChatBotPersona";
 
 function ProjectsPage() {
-  const [projectId, setProject] = useState("projectId");
+  const [projectId, setProjectId] = useState("projectId");
   const projectDetails = [
     {
       project_id: "p1",
@@ -91,9 +92,13 @@ function ProjectsPage() {
       created_on: "3-November-2020"
     }
   ];
+
+  const changeProject = (id)=>{
+    setProjectId(id);
+  }
   return (
     <div>
-      <Sidebar data={projectDetails} />
+      <Sidebar data={projectDetails} changeProject={changeProject}/>
       <Project projectId={projectId} />
     </div>
   );
@@ -105,6 +110,8 @@ const Project = ({ projectId }) => {
       return <ClosedSeq2seq />;
     case "p2":
       return <OpenChatBot />;
+    case "p3":
+      return <ChatBotPersona />;
     default:
       return <ClosedSeq2seq />;
   }

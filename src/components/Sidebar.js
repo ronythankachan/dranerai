@@ -1,24 +1,27 @@
 import React from "react";
 import "../css/Sidebar.css";
 
-export const Sidebar = ({ data }) => {
+export const Sidebar = ({ data,changeProject }) => {
   return (
     <button className="sidebar scrollbar">
       {data.map(item => {
         return (
-          <ProjectCard
+          <div onClick={()=>changeProject(item.project_id)}>
+            <ProjectCard
+            project_id ={item.project_id}
             title={item.project_name}
             description={item.description}
             tags={item.tags}
             date={item.created_on}
             key={item.project_id}
           />
+          </div>
         );
       })}
     </button>
   );
 };
-const ProjectCard = ({ title, description, tags, date }) => {
+const ProjectCard = ({ id,title, description, tags, date }) => {
   return (
     <div className="sidebar-card">
       <div className="card-title h6">{title}</div>
